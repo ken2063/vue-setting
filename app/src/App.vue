@@ -1,15 +1,15 @@
 <script>
-import HelloWorld from '@/views/HelloWorld.vue';
+import indexGuide from '@/views/indexGuide.vue';
 
 export default {
   components: {
-    HelloWorld,
+    indexGuide,
   },
 };
 </script>
 
 <template>
-  <HelloWorld/>
+  <indexGuide />
 </template>
 
 <style scoped>
