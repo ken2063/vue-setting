@@ -1,15 +1,11 @@
 <script>
-import indexGuide from '@/views/indexGuide.vue';
-
 export default {
-  components: {
-    indexGuide,
-  },
-};
+  name: 'App'
+}
 </script>
 
 <template>
-  <indexGuide />
+  <router-view /> <!-- 추가 -->
 </template>
 
 <style scoped>
