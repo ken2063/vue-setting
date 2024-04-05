@@ -7,6 +7,11 @@ const routes = [
         component:()=>import('@/views/indexGuide.vue')
     },
     {
+        path: '/indexGuide',
+        name: '/indexGuide',
+        component:()=>import('@/views/indexGuide.vue')
+    },
+    {
         path: '/HelloWorld',
         name: '/HelloWorld',
         component:()=>import('@/views/layout/HelloWorld.vue')
