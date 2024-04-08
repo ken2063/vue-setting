@@ -1,7 +1,7 @@
 <script>
-  export default {
-    name: 'App'
-  }
+export default {
+  name: 'App'
+}
 </script>
 
 <template>
@@ -9,5 +9,5 @@
 </template>
 
 <style>
-  @import '@/assets/scss/import.scss';
+@import '@/assets/scss/import.scss';
 </style>

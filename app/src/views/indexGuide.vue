@@ -11,30 +11,25 @@ export default {
     <div class="list_header">
       <h1>VUE - SETTING</h1>
       <p class="info">Publishing List</p>
-      <div class="proc_wrap"></div>
     </div>
     <!-- //list_header -->
-
-    <ul class="guideNav on">
+    <!-- guideNav -->
+    <ul class="guideNav">
       <li class="la">
-        <router-link to="/indexGuide"
-                >가이드 인덱스</router-link
-              >
+        <router-link to="/indexGuide">가이드 인덱스</router-link>
       </li>
       <li class="la">
-        <router-link to="/indexGuide"
-                >가이드 인덱스</router-link
-              >
+        <router-link to="/indexGuide">가이드 인덱스</router-link>
       </li>
       <li class="la">
-        <router-link to="/indexGuide"
-                >가이드 인덱스</router-link
-              >
+        <router-link to="/indexGuide">가이드 인덱스</router-link>
       </li>
     </ul>
+    <!-- // guideNav -->
 
-    <h2 id="notice">공통</h2>
+    <!-- cont -->
     <div class="cont">
+      <h2>공통</h2>
       <table>
         <colgroup>
           <col span="1" width="10%" />
@@ -44,51 +39,117 @@ export default {
           <col span="1" width="10%" />
           <col span="1" width="10%" />
           <col span="1" width="10%" />
+          <col span="1" width="15%" />
         </colgroup>
         <thead>
           <tr>
-            <th scope="col">1 Depth</th>
-            <th scope="col">2 Depth</th>
-            <th scope="col">3 Depth</th>
-            <th scope="col">파일명</th>
-            <th scope="col">Date</th>
-            <th scope="col">상태</th>
-            <th scope="col">Log</th>
+            <th class="thead">1 Depth</th>
+            <th class="thead">2 Depth</th>
+            <th class="thead">3 Depth</th>
+            <th class="thead">files</th>
+            <th class="thead">start-Date</th>
+            <th class="thead">end-Date</th>
+            <th class="thead">state</th>
+            <th class="thead">Log</th>
           </tr>
         </thead>
         <tbody>
-          <tr class="ed">
-            <td class="center">가이드 인덱스</td>
-            <td class="center"></td>
-            <td class="center"></td>
+          <tr>
+            <td>1 Depth</td>
+            <td>2 Depth</td>
+            <td>3 Depth</td>
             <!-- <td class="url"><a href="/DArending" target="_blank">랜딩</a></td> -->
-            <td class="url">
-              <router-link to="/indexGuide"
-                >가이드 인덱스</router-link
-              >
+            <td class="file">
+              <router-link to="/indexGuide">@/views/indexGuide.vue</router-link>
             </td>
-            <td class="center">날짜</td>
-            <td class="center state"><i class="red">완료</i></td>
-            <td></td>
-          </tr>
-
-          <tr class="ed">
-            <td class="center">헬로월드</td>
-            <td class="center"></td>
-            <td class="center"></td>
-            <!-- <td class="url"><a href="/DArending" target="_blank">랜딩</a></td> -->
-            <td class="url">
-              <router-link to="/HelloWorld"
-                >헬로월드</router-link
-              >
+            <td>2024.04.05</td>
+            <td>2024.04.08</td>
+            <td>
+              <div class="state">
+                <p class="txt">30%</p>
+                <span style="width:30%;"></span>
+              </div>
             </td>
-            <td class="center">날짜</td>
-            <td class="center state">80%</td>
-            <td></td>
+            <td>
+              <ul class="log">
+                <!-- li -->
+                <li class="flex">
+                  <p class="date">2024.04.05</p>
+                  <div class="txt">그냥 수정해봄 그냥 수정해봄 그냥 수정해봄 그냥 수정해봄</div>
+                </li>
+                <!-- // li -->
+                
+                <!-- li -->
+                <li class="flex">
+                  <p class="date">2024.04.08</p>
+                  <div class="txt">오늘도 수정해봄 오늘도 수정해봄 오늘도 수정해봄 오늘도 수정해봄</div>
+                </li>
+                <!-- // li -->
+              </ul>
+            </td>
           </tr>
         </tbody>
       </table>
     </div>
+    <!-- // cont -->
+
+    <!-- cont -->
+    <div class="cont">
+      <h2>페이지</h2>
+      <table>
+        <colgroup>
+          <col span="1" width="10%" />
+          <col span="1" width="10%" />
+          <col span="1" width="10%" />
+          <col span="1" width="*" />
+          <col span="1" width="10%" />
+          <col span="1" width="10%" />
+          <col span="1" width="10%" />
+          <col span="1" width="15%" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="thead">1 Depth</th>
+            <th class="thead">2 Depth</th>
+            <th class="thead">3 Depth</th>
+            <th class="thead">files</th>
+            <th class="thead">start-Date</th>
+            <th class="thead">end-Date</th>
+            <th class="thead">state</th>
+            <th class="thead">Log</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1 Depth</td>
+            <td>2 Depth</td>
+            <td>3 Depth</td>
+            <td class="file">
+              <router-link to="/HelloWorld">@/views/layout/HelloWorld.vue</router-link>
+            </td>
+            <td>2024.04.05</td>
+            <td>2024.04.08</td>
+            <td>
+              <div class="state">
+                <p class="txt">10%</p>
+                <span style="width:10%;"></span>
+              </div>
+            </td>
+            <td>
+              <ul class="log">
+                <!-- li -->
+                <li class="flex">
+                  <p class="date">2024.04.05</p>
+                  <div class="txt">그냥 수정해봄 그냥 수정해봄 그냥 수정해봄 그냥 수정해봄</div>
+                </li>
+                <!-- // li -->
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- // cont -->
   </div>
 </template>
 

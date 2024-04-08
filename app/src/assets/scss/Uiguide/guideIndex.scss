@@ -2,263 +2,125 @@ h1 {
   font-size: 4rem;
 }
 .info {
+  display: inline-block;
   font-size: 2rem;
 }
 
 .guideNav {
   display: flex;
   align-items: center;
-  margin: 0 auto 40px;
+  margin: 50px auto 20px;
 
   .la {
+    margin-right: 10px;
     padding: 0 20px;
     height: 45px;
     line-height: 45px;
     background-color: #e3f4ff;
     color: #1b47b9;
-    border-radius: 45px;
+    border-radius: 12px;
     border: none;
     font-size: 1.5rem;
-
-    & + & {
-      margin-left: 20px;
-    }
+    font-weight:700;
   }
 }
 div.cont {
-  border-top: 1px solid #444;
-}
-table {
-  border-collapse: collapse;
-  width: 100%;
-  border-spacing: 0;
-}
-table thead th {
-  padding: 7px 3px;
-  border: 1px solid #ccc;
-  border-left: 0;
-  border-right: 0;
-  background: #eee;
-  font-size: 15px;
-}
-table tbody td {
-  padding: 7px 3px;
-  background: #e5e5e5;
-  border: 1px solid #ccc;
-  border-left: 0;
-  border-right: 0;
-  text-align: left;
-  color: #898989;
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.2);
-  padding: 0 10px;
-}
-table tbody td:first-child {
-  text-align: center;
-}
-table tbody td a {
-  color: rgba(0, 0, 0, 0.2);
-}
-table tbody td.center {
-  padding: 7px 10px;
-  text-align: center;
-}
-table tbody td.left {
-  padding: 7px 10px;
-  text-align: left;
-}
-table tbody td.url {
-  padding: 7px 10px;
-  text-align: left;
-}
-table tbody tr.hidden td {
-  display: table-cell;
-  background: #f5f5f5;
-  color: #898989;
-  text-decoration: line-through;
-  opacity: 1;
-}
-table tbody tr.temp td {
-  display: table-cell;
-  background: #dbe7e1;
-  color: #444;
-  opacity: 1;
-}
-table tbody tr.ing td {
-  display: table-cell;
-  background: #fffbe6;
-  color: #444;
-}
-table tbody tr.ed td {
-  display: table-cell;
-  background: #fff;
-  color: #444;
-  transition: all 0.4s;
-}
-table tbody tr.ed.blue td.blue:hover {
-  color: #fff !important;
-}
-table tbody tr.ed.add td {
-  display: table-cell;
-  background: #d9eafd;
-  color: #444;
-}
-table tbody tr.ed.mod td {
-  display: table-cell;
-  background: #d9eafd;
-  color: #e80000 !important;
-}
-table tbody tr.temp.mod td {
-  display: table-cell;
-  background: #d9eafd;
-  color: #e80000 !important;
-}
-table tbody tr.ed.cfm {
-  text-decoration: line-through;
-}
-table tbody tr.hidden a,
-table tbody tr.temp a,
-table tbody tr.ing a,
-table tbody tr.ed a {
-  color: #444;
-}
-.proc_wrap {
-  margin: 0 0 20px;
-  text-align: right;
-}
-.proc_wrap strong {
-  color: #0d643a;
-  font-weight: bold;
+  margin-bottom:100px;
+  h2 {
+    margin: 0 auto 20px;
+    padding: 12px;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #111;
+    border-radius: 5px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    thead th {
+      padding: 10px 5px;
+      background: #f5f7f8;
+      font-size: 1.2rem;
+      border-top: 1px solid #111;
+      border-bottom: 1px solid #e3e5e8;
+      border-left: 1px solid #e3e5e8;
+      font-weight: 700;
+    }
+    thead th:last-child {
+      border-right: 1px solid #e3e5e8;
+    }
+
+    tbody {
+      td {
+        padding: 10px 5px;
+        background: #fff;
+        border-left: 1px solid #e3e5e8;
+        border-bottom: 1px solid #e3e5e8;
+        font-size: 1.2rem;
+        text-align: center;
+        vertical-align: middle;
+        
+        &.file {
+          padding:10px 25px;
+          text-align:left;
+          text-decoration:underline;
+        }
+
+        .state {
+          display: inline-block;
+          position: relative;
+          width: 100%;
+          height: 20px;
+          border: 1px solid #e3e5e8;
+          border-radius: 10px;
+          vertical-align: middle;
+          overflow: hidden;
+          .txt {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+          }
+          span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            display: inline-block;
+            background-color: #00c772;
+            text-align: center;
+            z-index: 1;
+          }
+        }
+
+        .log {
+          li {
+            align-items: flex-start;
+            .date {
+              padding: 4px 6px;
+              margin: 0 10px 0 0;
+              color: #fff;
+              background-color: #a0adb2;
+              border-radius: 4px;
+            }
+            .txt {
+              padding: 4px 0;
+              text-align: left;
+            }
+          }
+        }
+
+      }
+
+      td:last-child {
+        border-right: 1px solid #e3e5e8;
+      }
+    }
+  }
 }
 
-/* tab */
-.tab {
-  margin-bottom: 10px;
-  overflow: hidden;
-}
-.tab ul {
-  overflow: hidden;
-}
-.tab ul li {
-  float: left;
-}
-.tab ul li a {
-  position: relative;
-  float: left;
-  padding: 10px 30px;
-  background: #eee;
-  border-right: 1px solid #fff;
-  font-size: 13px;
-  color: #666;
-  text-align: center;
-  transition: all 0.3s;
-}
-.tab ul li:last-child a {
-  border: none;
-}
-.tab ul li a:hover {
-  background: #ccc;
-}
-.tab ul li.on a {
-  background: #2ab6ad;
-  color: #fff;
-}
-.tab ul li.on a:hover {
-  background: #2ab6ad;
-}
-
-/* marker */
-.marker {
-  position: relative;
-  text-align: right;
-  margin-bottom: 20px;
-}
-.marker li {
-  position: relative;
-  display: inline-block;
-  margin-right: 15px;
-  padding-left: 17px;
-  color: #666;
-  list-style: none;
-}
-.marker li.dep {
-  padding-right: 25px;
-}
-.marker li:before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 12px;
-  height: 12px;
-  content: "";
-}
-.marker li.m1:before {
-  background: #999;
-}
-.marker li.s1:before {
-  background: #53b100;
-}
-.marker li.s2:before {
-  background: #0142b3;
-}
-.marker li.s3:before {
-  background: #e30101;
-  animation: over_a both linear infinite 1.3s;
-}
-.marker li.s4:before {
-  background: #9622d2;
-}
-.marker li.s5:before {
-  background: #f68500;
-}
-.marker:after {
-  display: block;
-  clear: both;
-  height: 0;
-  content: "";
-  overflow: hidden;
-}
-
-/* state */
-.state {
-}
-.state i {
-  display: inline-block;
-  position: relative;
-  margin-right: 1px;
-  border-radius: 1px;
-  vertical-align: middle;
-}
-.state i.m1 {
-  background: #999;
-}
-.state i.s1 {
-  background: #53b100;
-}
-.state i.s2 {
-  background: #0142b3;
-}
-.state i.s3 {
-  background: #e30101;
-  animation: over_a both linear infinite 1.3s;
-}
-.state i.s4 {
-  background: #9622d2;
-}
-.state i.s5 {
-  background: #f68500;
-}
-@keyframes over_a {
-  0% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 0.2;
-  }
-  60% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 1;
-  }
-}
