@@ -1,0 +1,13 @@
+// mixins.scss
+
+@mixin large-text { /* 선언 */
+    font: {
+        size: 22px;
+        weight: bold;
+        family: sans-serif;
+    }
+}
+
+h1 {
+    @include large-text; /* 사용 */
+}

@@ -56,7 +56,7 @@ div.cont {
 
     tbody {
       td {
-        padding: 10px 5px;
+        padding: 10px;
         background: #fff;
         border-left: 1px solid #e3e5e8;
         border-bottom: 1px solid #e3e5e8;
@@ -101,6 +101,7 @@ div.cont {
         .log {
           li {
             align-items: flex-start;
+            margin:0 0 5px 0;
             .date {
               padding: 4px 6px;
               margin: 0 10px 0 0;
@@ -112,6 +113,7 @@ div.cont {
               padding: 4px 0;
               text-align: left;
             }
+            &:last-child {margin:0;}
           }
         }
 
