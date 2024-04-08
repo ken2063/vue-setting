@@ -14,8 +14,11 @@ import { fileURLToPath, URL } from "url";
 
 export default defineConfig({
   plugins: [vue()],
-  base: "/vue-setting/",
+  // base: "/vue-setting/",
   resolve: {
     alias: { "@": fileURLToPath(new URL("./src", import.meta.url)) },
   },
+  server: {
+    port: 3000
+  }
 });

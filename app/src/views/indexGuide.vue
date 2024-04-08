@@ -138,7 +138,7 @@ export default {
             <td>3 Depth</td>
             <td>4 Depth</td>
             <td class="file">
-              <router-link to="/HelloWorld">@/views/layout/HelloWorld.vue</router-link>
+              <router-link to="/HelloWorld" target="_blank">@/views/layout/HelloWorld.vue</router-link>
             </td>
             <td>2024.04.05</td>
             <td>2024.04.08</td>
@@ -155,6 +155,40 @@ export default {
                 <li class="flex">
                   <p class="date">2024.04.05</p>
                   <div class="txt">그냥 수정해봄 그냥 수정해봄 그냥 수정해봄 그냥 수정해봄</div>
+                </li>
+                <!-- // log - li -->
+              </ul>
+            </td>
+          </tr>
+          <!-- // tr -->
+
+          <!-- tr -->
+          <tr>
+            <td>1 Depth</td>
+            <td>2 Depth</td>
+            <td>3 Depth</td>
+            <td>4 Depth</td>
+            <td class="file">
+              <router-link to="/DArending" target="_blank">@/views/DArending.vue</router-link>
+            </td>
+            <td>2024.04.08</td>
+            <td>2024.04.08</td>
+            <td>
+              <div class="state">
+                <p class="txt">100%</p>
+                <span style="width:100%;"></span>
+              </div>
+            </td>
+            <td>-</td>
+            <td>
+              <ul class="log">
+                <!-- log - li -->
+                <li class="flex">
+                  <!-- 
+                    <p class="date"></p>
+                    <div class="txt"></div> 
+                  -->
+                  -
                 </li>
                 <!-- // log - li -->
               </ul>

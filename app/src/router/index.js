@@ -16,6 +16,11 @@ const routes = [
         name: '/HelloWorld',
         component:()=>import('@/views/layout/HelloWorld.vue')
     },
+    {
+        path: '/DArending',
+        name: '/DArending',
+        component:()=>import('@/views/DArending.vue')
+    },
 ]
 const router = createRouter({
     history: createWebHistory(),
