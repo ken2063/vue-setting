@@ -1,16 +1,6 @@
 // src/router/index.js
 import { createRouter, createWebHistory} from 'vue-router'
 const routes = [
-    {
-        path: '/',
-        name: '/',
-        component:()=>import('@/views/indexGuide.vue')
-    },
-    {
-        path: '/indexGuide',
-        name: '/indexGuide',
-        component:()=>import('@/views/indexGuide.vue')
-    },
     // not found
     {
         path: "/notFound",
@@ -22,6 +12,16 @@ const routes = [
         redirect: "/notFound"
     },
     // not found
+    {
+        path: '/',
+        name: '/',
+        component:()=>import('@/views/indexGuide.vue')
+    },
+    {
+        path: '/indexGuide',
+        name: '/indexGuide',
+        component:()=>import('@/views/indexGuide.vue')
+    },
     {
         path: '/HelloWorld',
         name: '/HelloWorld',
