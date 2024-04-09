@@ -29,10 +29,10 @@ const routes = [
         name: "/notFound",
         component:()=>import('@/views/layout/notFound.vue')
     },
-    {
-        path: "/:pathMatch(.*)*",
-        redirect: "/notFound"
-    },
+    // {
+    //     path: "/:pathMatch(.*)*",
+    //     redirect: "/notFound"
+    // },
     // not found
 ]
 const router = createRouter({
