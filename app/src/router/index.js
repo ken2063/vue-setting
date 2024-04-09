@@ -24,11 +24,11 @@ const routes = [
     },
 
     // not found
-    {
-        path: "/notFound",
-        name: "/notFound",
-        component:()=>import('@/views/layout/notFound.vue')
-    },
+    // {
+    //     path: "/notFound",
+    //     name: "/notFound",
+    //     component:()=>import('@/views/layout/notFound.vue')
+    // },
     // {
     //     path: "/:pathMatch(.*)*",
     //     redirect: "/notFound"
