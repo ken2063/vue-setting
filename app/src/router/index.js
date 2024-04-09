@@ -1,5 +1,5 @@
 // src/router/index.js
-import { createRouter, createWebHistory} from 'vue-router'
+import { createRouter, createWebHashHistory} from 'vue-router'
 const routes = [
     {
         path: '/',
@@ -35,8 +35,8 @@ const routes = [
     // not found
 ]
 const router = createRouter({
-    // history: createWebHistory(),
-    history: createWebHistory(process.env.BASE_URL),
+    history: createWebHashHistory(),
+    // history: createWebHistory(process.env.BASE_URL),
     routes,
 })
 export default router
