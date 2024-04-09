@@ -14,7 +14,7 @@ import { fileURLToPath, URL } from "url";
 
 export default defineConfig({
   plugins: [vue()],
-  base: "/vue-setting/app/docs/",
+  // base: "/vue-setting/app/docs/",
   resolve: {
     alias: { "@": fileURLToPath(new URL("./src", import.meta.url)) },
   },
@@ -22,6 +22,6 @@ export default defineConfig({
     port: 3000
   },
   build: {
-    outDir: 'docs'
+    outDir: '../docs/'
 }
 });
