@@ -14,7 +14,7 @@ import { fileURLToPath, URL } from "url";
 
 export default defineConfig({
   plugins: [vue()],
-  base: "/vue-setting/docs/",
+  // base: "/vue-setting/",
   resolve: {
     alias: { "@": fileURLToPath(new URL("./src", import.meta.url)) },
   },
