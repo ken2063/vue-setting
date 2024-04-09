@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port 3000",
-    "build": "vite build",
+    "build": "vite build --base=/vue-setting/docs/",
     "preview": "vite preview"
   },
   "dependencies": {
