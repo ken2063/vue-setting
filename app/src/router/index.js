@@ -1,17 +1,6 @@
 // src/router/index.js
 import { createRouter, createWebHistory} from 'vue-router'
 const routes = [
-    // not found
-    {
-        path: "/notFound",
-        name: "/notFound",
-        component:()=>import('@/views/layout/notFound.vue')
-    },
-    {
-        path: "/:pathMatch(.*)*",
-        redirect: "/notFound"
-    },
-    // not found
     {
         path: '/',
         name: '/',
@@ -32,10 +21,22 @@ const routes = [
         name: '/DArending',
         component:()=>import('@/views/DArending.vue')
     },
+
+    // not found
+    {
+        path: "/notFound",
+        name: "/notFound",
+        component:()=>import('@/views/layout/notFound.vue')
+    },
+    {
+        path: "/:pathMatch(.*)*",
+        redirect: "/notFound"
+    },
+    // not found
 ]
 const router = createRouter({
-    history: createWebHistory(),
-    // history: createWebHistory(process.env.BASE_URL),
+    // history: createWebHistory(),
+    history: createWebHistory(process.env.BASE_URL),
     routes,
 })
 export default router
