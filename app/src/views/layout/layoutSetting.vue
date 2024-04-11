@@ -11,6 +11,7 @@ export default {
 
 <template>
   <div class="wrap">
+  <router-view /><!-- 추가 -->
     <pageContainer>
     </pageContainer>
   </div>

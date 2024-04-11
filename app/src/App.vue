@@ -1,11 +1,16 @@
 <script>
+import layoutSetting from '@/views/layout/layoutSetting.vue'
+
 export default {
+  components: {
+    layoutSetting,
+  },
   name: 'App'
 }
 </script>
 
 <template>
-  <router-view /><!-- 추가 -->
+  <layoutSetting></layoutSetting>
 </template>
 
 <style>
