@@ -19,7 +19,7 @@ export default defineConfig({
     alias: { "@": fileURLToPath(new URL("./src", import.meta.url)) },
   },
   server: {
-    port: 3000
+    port: '8080',
   },
   build: {
     outDir: './vue/'
