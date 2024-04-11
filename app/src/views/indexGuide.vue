@@ -5,8 +5,6 @@ export default {
 </script>
 
 <template>
-  <!-- wrap -->
-  <div id="wrap">
     <!-- list_header -->
     <div class="list_header">
       <h1>VUE - SETTING</h1>
@@ -199,7 +197,6 @@ export default {
       </table>
     </div>
     <!-- // cont -->
-  </div>
 </template>
 
 <style>

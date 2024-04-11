@@ -1,20 +1,15 @@
 <script>
-import pageContainer from '@/views/layout/pageContainer.vue'
-
 export default {
   name: 'layoutSetting',
-  components: {
-    pageContainer,
-  },
 };
 </script>
 
 <template>
-  <div class="wrap">
-  <router-view /><!-- 추가 -->
-    <pageContainer>
-    </pageContainer>
+  <!-- wrap -->
+  <div id="wrap">
+    <router-view /><!-- 추가 -->
   </div>
+  <!-- // wrap -->
 </template>
 
 <style>

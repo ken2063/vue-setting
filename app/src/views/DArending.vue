@@ -1,21 +1,23 @@
 <script>
-import layoutSetting from '@/views/layout/layoutSetting.vue'
 import defaultHead from '@/components/head/defaultHead.vue'
+import HelloWorld from '@/components/HelloWorld.vue'
+import pageContainer from '@/views/layout/pageContainer.vue'
 
 
 export default {
   components: {
-    layoutSetting,
     defaultHead,
+    HelloWorld,
+    pageContainer,
   }
 }
 </script>
 
 <template>
   <defaultHead />
-  <layoutSetting>
-    
-  </layoutSetting>
+  <pageContainer>
+    <HelloWorld />
+  </pageContainer>
 </template>
 
 <style>
