@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite --open --host",
     "build": "vite build",
-    "pb": "vite build --base=/app/vue/",
+    "pb": "vite build --base=/vue-setting/app/vue/",
     "preview": "vite preview"
   },
   "dependencies": {
