@@ -1,5 +1,6 @@
 {
   "name": "app",
+  "homepage": "https://ken2063.github.io/vue-setting/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,6 +8,7 @@
     "dev": "vite --open --host",
     "build": "vite build",
     "pb": "vite build --base=/vue-setting/app/vue/",
+    "publish-build": "vite build --base=/vue/",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -22,6 +24,7 @@
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-vue": "^9.24.0",
+    "gh-pages": "^6.1.1",
     "prettier": "^3.2.5",
     "vite": "^5.2.0"
   }
