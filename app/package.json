@@ -1,0 +1,26 @@
+{
+  "name": "vue-setting",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "pinia": "^2.1.7",
+    "sass": "^1.74.1",
+    "sass-loader": "^10.5.2",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-vue": "^9.24.1",
+    "prettier": "^3.2.5",
+    "vite": "^5.2.0"
+  }
+}
