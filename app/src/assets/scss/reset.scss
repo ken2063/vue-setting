@@ -13,7 +13,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 header, section, article, footer, aside, nav, main, figure {display:block;}
 ul,ol,li,dl,dt,dd, i {margin:0; padding:0; list-style:none;}
 p,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
-a {color:inherit; font-size:inherit; line-height:inherit; text-decoration:none;}
+a {display:inline-block; color:inherit; font-size:inherit; line-height:inherit; text-decoration:none;}
 a:hover,a:focus,a:active {color:inherit; text-decoration:none;}
 table {border-collapse:collapse; border-spacing:0;}
 caption,legend {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}

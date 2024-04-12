@@ -13,5 +13,5 @@ export default {
 </template>
 
 <style>
-@import "@/assets/scss/Uiguide/DefaultFoot.scss";
+@import "@/assets/scss/layout/DefaultFoot.scss";
 </style>

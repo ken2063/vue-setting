@@ -13,14 +13,24 @@ const routes = [
         component:()=>import('@/views/indexGuide.vue')
     },
     {
-        path: '/HelloWorld',
-        name: '/HelloWorld',
-        component:()=>import('@/views/layout/HelloWorld.vue')
+        path: '/DefaultHead',
+        name: '/DefaultHead',
+        component:()=>import('@/layout/DefaultHead.vue')
     },
     {
-        path: '/DArending',
-        name: '/DArending',
-        component:()=>import('@/views/DArending.vue')
+        path: '/PageLayout',
+        name: '/PageLayout',
+        component:()=>import('@/layout/PageLayout.vue')
+    },
+    {
+        path: '/DefaultFooter',
+        name: '/DefaultFooter',
+        component:()=>import('@/layout/DefaultFooter.vue')
+    },
+    {
+        path: '/NormalLayout',
+        name: '/NormalLayout',
+        component:()=>import('@/views/NormalLayout.vue')
     },
 
     // not found

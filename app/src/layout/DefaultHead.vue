@@ -12,12 +12,12 @@ export default {
 <template>
   <header>
     <h1>
-      <a href="#"></a>
+      <a href="#" title="LOGO">LOGO</a>
     </h1>
     <DefaultMenu class="hamButton"></DefaultMenu>
   </header>
 </template>
 
 <style>
-@import "@/assets/scss/Uiguide/DefaultHead.scss";
+@import "@/assets/scss/layout/DefaultHead.scss";
 </style>

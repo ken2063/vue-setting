@@ -5,6 +5,7 @@ export default {
 </script>
 
 <template>
+  <div class="GuideWrap">
     <!-- list_header -->
     <div class="list_header">
       <h1>VUE - SETTING</h1>
@@ -13,12 +14,6 @@ export default {
     <!-- //list_header -->
     <!-- guideNav -->
     <ul class="guideNav">
-      <li class="la">
-        <router-link to="/indexGuide">가이드 인덱스</router-link>
-      </li>
-      <li class="la">
-        <router-link to="/indexGuide">가이드 인덱스</router-link>
-      </li>
       <li class="la">
         <router-link to="/indexGuide">가이드 인덱스</router-link>
       </li>
@@ -93,6 +88,108 @@ export default {
             </td>
           </tr>
           <!-- // tr -->
+
+          <!-- tr -->
+          <tr>
+            <td>1 Depth</td>
+            <td>2 Depth</td>
+            <td>3 Depth</td>
+            <td>4 Depth</td>
+            <td class="file">
+              <router-link to="/DefaultHead" target="_blank">@/layout/DefaultHead.vue</router-link>
+            </td>
+            <td>2024.04.05</td>
+            <td>2024.04.08</td>
+            <td>
+              <div class="state">
+                <p class="txt">30%</p>
+                <span style="width:30%;"></span>
+              </div>
+            </td>
+            <td>-</td>
+            <td>
+              <ul class="log">
+                <!-- log - li -->
+                <li class="flex">
+                  <!-- 
+                    <p class="date"></p>
+                    <div class="txt"></div> 
+                  -->
+                  -
+                </li>
+                <!-- // log - li -->
+              </ul>
+            </td>
+          </tr>
+          <!-- // tr -->
+
+          <!-- tr -->
+          <tr>
+            <td>1 Depth</td>
+            <td>2 Depth</td>
+            <td>3 Depth</td>
+            <td>4 Depth</td>
+            <td class="file">
+              <router-link to="/PageLayout" target="_blank">@/layout/PageLayout.vue</router-link>
+            </td>
+            <td>2024.04.05</td>
+            <td>2024.04.08</td>
+            <td>
+              <div class="state">
+                <p class="txt">30%</p>
+                <span style="width:30%;"></span>
+              </div>
+            </td>
+            <td>-</td>
+            <td>
+              <ul class="log">
+                <!-- log - li -->
+                <li class="flex">
+                  <!-- 
+                    <p class="date"></p>
+                    <div class="txt"></div> 
+                  -->
+                  -
+                </li>
+                <!-- // log - li -->
+              </ul>
+            </td>
+          </tr>
+          <!-- // tr -->
+
+          <!-- tr -->
+          <tr>
+            <td>1 Depth</td>
+            <td>2 Depth</td>
+            <td>3 Depth</td>
+            <td>4 Depth</td>
+            <td class="file">
+              <router-link to="/DefaultFooter" target="_blank">@/layout/DefaultFooter.vue</router-link>
+            </td>
+            <td>2024.04.05</td>
+            <td>2024.04.08</td>
+            <td>
+              <div class="state">
+                <p class="txt">30%</p>
+                <span style="width:30%;"></span>
+              </div>
+            </td>
+            <td>-</td>
+            <td>
+              <ul class="log">
+                <!-- log - li -->
+                <li class="flex">
+                  <!-- 
+                    <p class="date"></p>
+                    <div class="txt"></div> 
+                  -->
+                  -
+                </li>
+                <!-- // log - li -->
+              </ul>
+            </td>
+          </tr>
+          <!-- // tr -->
         </tbody>
       </table>
     </div>
@@ -136,38 +233,7 @@ export default {
             <td>3 Depth</td>
             <td>4 Depth</td>
             <td class="file">
-              <router-link to="/HelloWorld" target="_blank">@/views/layout/HelloWorld.vue</router-link>
-            </td>
-            <td>2024.04.05</td>
-            <td>2024.04.08</td>
-            <td>
-              <div class="state">
-                <p class="txt">10%</p>
-                <span style="width:10%;"></span>
-              </div>
-            </td>
-            <td>2024.04.08</td>
-            <td>
-              <ul class="log">
-                <!-- log - li -->
-                <li class="flex">
-                  <p class="date">2024.04.05</p>
-                  <div class="txt">그냥 수정해봄 그냥 수정해봄 그냥 수정해봄 그냥 수정해봄</div>
-                </li>
-                <!-- // log - li -->
-              </ul>
-            </td>
-          </tr>
-          <!-- // tr -->
-
-          <!-- tr -->
-          <tr>
-            <td>1 Depth</td>
-            <td>2 Depth</td>
-            <td>3 Depth</td>
-            <td>4 Depth</td>
-            <td class="file">
-              <router-link to="/DArending" target="_blank">@/views/DArending.vue</router-link>
+              <router-link to="/NormalLayout" target="_blank">@/views/NormalLayout.vue</router-link>
             </td>
             <td>2024.04.08</td>
             <td>2024.04.08</td>
@@ -197,8 +263,9 @@ export default {
       </table>
     </div>
     <!-- // cont -->
+  </div>
 </template>
 
 <style>
-@import "@/assets/scss/Uiguide/guideIndex.scss";
+@import "@/assets/scss/layout/guideIndex.scss";
 </style>

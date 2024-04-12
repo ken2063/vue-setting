@@ -1,6 +1,8 @@
 <script>
 export default {
-  name: 'DefaultSetting',
+  name: 'DefaultLayout',
+  components: {
+  }
 };
 </script>
 
@@ -13,6 +15,6 @@ export default {
 </template>
 
 <style>
-@import "@/assets/scss/Uiguide/DefaultSetting.scss";
+@import "@/assets/scss/layout/DefaultLayout.scss";
 </style>
 
