@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'defaultMenuContent',
+  name: 'DefaultMenuContent',
 };
 </script>
 

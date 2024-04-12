@@ -1,16 +1,16 @@
 <script>
-import layoutSetting from '@/views/layout/layoutSetting.vue'
+import defaultLayout from '@/layout/DefaultLayout.vue'
 
 export default {
   components: {
-    layoutSetting,
+    defaultLayout,
   },
   name: 'App'
 }
 </script>
 
 <template>
-  <layoutSetting></layoutSetting>
+  <defaultLayout></defaultLayout>
 </template>
 
 <style>

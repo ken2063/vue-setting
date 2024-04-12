@@ -1,10 +1,10 @@
 <script>
-import defaultMenuContent from '@/components/head/defaultMenuContent.vue'
+import DefaultMenuContent from '@/components/head/DefaultMenuContent.vue'
 
 export default {
   name: 'defaultMenu',
   components : {
-    defaultMenuContent
+    DefaultMenuContent
   },
   data() {
     return {
@@ -21,7 +21,7 @@ export default {
       <span class="mid"></span>
       <span class="bottom"></span>
     </button>
-    <defaultMenuContent v-if="isModalViewed" @close-modal="isModalViewed = false" />
+    <DefaultMenuContent v-if="isModalViewed" @close-modal="isModalViewed = false" />
   </div>
 </template>
 
