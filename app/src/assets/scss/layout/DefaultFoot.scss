@@ -4,4 +4,10 @@ footer {
     background-color: #f5f6f7;
     border-top:1px solid #ebebeb;
     box-sizing:border-box;
+
+    .foot {
+        margin:0 auto;
+        width:100%;
+        max-width:1280px;
+    }
 }

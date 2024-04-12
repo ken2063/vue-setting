@@ -11,10 +11,12 @@ export default {
 
 <template>
   <header>
-    <h1>
-      <a href="#" title="LOGO">LOGO</a>
-    </h1>
-    <DefaultMenu class="hamButton"></DefaultMenu>
+    <div class="head">
+      <h1>
+        <a href="#" title="LOGO">LOGO</a>
+      </h1>
+      <DefaultMenu class="hamButton"></DefaultMenu>
+    </div>
   </header>
 </template>
 

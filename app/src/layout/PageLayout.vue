@@ -15,9 +15,11 @@ export default {
     <DefaultHead/>
 
     <div class="container">
-      <slot name="container">
-        컨테이너에 들어갈 내용
-      </slot>
+      <main>
+        <slot name="container">
+          컨테이너에 들어갈 내용
+        </slot>
+      </main>
     </div>
 
     <DefaultFooter/>

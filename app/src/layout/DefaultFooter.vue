@@ -8,7 +8,9 @@ export default {
 
 <template>
   <footer>
-    푸터
+    <div class="foot">
+      푸터
+    </div>
   </footer>
 </template>
 
