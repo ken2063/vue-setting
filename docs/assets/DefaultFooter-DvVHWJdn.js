@@ -1,0 +1,1 @@
+import{_ as o,c as e,o as t,a as s}from"./index-B5yrdaOH.js";const a={name:"DefaultFooter",components:{}},c=s("div",{class:"foot"}," 푸터 ",-1),n=[c];function r(_,f,l,p,d,i){return t(),e("footer",null,n)}const m=o(a,[["render",r]]);export{m as default};
