@@ -28,7 +28,7 @@ fieldset {border:none;padding:0;margin:0;}
 a:focus {border:0; outline:0;}
 :focus {outline:none;-webkit-box-shadow:none !important;-moz-box-shadow:none !important;box-shadow:none !important;}
 /* 기본 */
-img {width:100%;}
+img {width:100%; vertical-align:top;}
 /* 공통 사용*/
 i {font-style:normal !important;}
 input[type=button],input[type=email],input[type=password],input[type=reset],input[type=search],input[type=submit],input[type=tel],input[type=text],input[type=url],textarea,select{appearance:none; -webkit-appearance:none; -moz-appearance:none; border-radius:0; border:0;}

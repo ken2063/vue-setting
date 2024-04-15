@@ -259,6 +259,40 @@ export default {
             </td>
           </tr>
           <!-- // tr -->
+
+          <!-- tr -->
+          <tr>
+            <td>1 Depth</td>
+            <td>2 Depth</td>
+            <td>3 Depth</td>
+            <td>4 Depth</td>
+            <td class="file">
+              <router-link to="/MainHome" target="_blank">@/views/main/MainHome.vue</router-link>
+            </td>
+            <td>2024.04.08</td>
+            <td>2024.04.08</td>
+            <td>
+              <div class="state">
+                <p class="txt">100%</p>
+                <span style="width:100%;"></span>
+              </div>
+            </td>
+            <td>-</td>
+            <td>
+              <ul class="log">
+                <!-- log - li -->
+                <li class="flex">
+                  <!-- 
+                    <p class="date"></p>
+                    <div class="txt"></div> 
+                  -->
+                  -
+                </li>
+                <!-- // log - li -->
+              </ul>
+            </td>
+          </tr>
+          <!-- // tr -->
         </tbody>
       </table>
     </div>

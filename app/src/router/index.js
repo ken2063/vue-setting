@@ -32,6 +32,11 @@ const routes = [
         name: '/NormalLayout',
         component:()=>import('@/views/NormalLayout.vue')
     },
+    {
+        path: '/MainHome',
+        name: '/MainHome',
+        component:()=>import('@/views/main/MainHome.vue')
+    },
 
     // not found
     // {
