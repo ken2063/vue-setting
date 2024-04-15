@@ -72,21 +72,27 @@
 
         .LLsction01 {
             padding:30px;
-            
-            ul {
+            height:365px;
+
+            .tabbutton {
                 margin-bottom:20px;
 
-                li{
+                button{
                     position:relative;
                     margin-right:10px;
                     padding-right:15px;
                     font-size:1.8rem;
+
+                    &.active {
+                        text-decoration:underline;
+                    }
 
                     &::after {
                         position:absolute;
                         top:0;
                         right:0;
                         content:'/';
+                        color:#ebebeb
                     }
 
                     &:last-child::after {
@@ -106,8 +112,10 @@
         width:420px;
 
         .login {
+            position:relative;
             border:1px solid #ebebeb;
             padding:30px;
+            height:200px;
             border-radius:15px;
             background:#fafbfd;
 
@@ -133,6 +141,10 @@
             }
 
             .findbox {
+                position:absolute;
+                bottom:30px;
+                left:30px;
+                right:30px;
                 margin:10px auto 0;
 
                 button {
@@ -165,6 +177,42 @@
                 .jointxt {
                     margin:0 0 0 auto;
                 }
+            }
+        }
+
+        .LRbanner {
+            position:relative;
+            margin:15px auto;
+            height:150px;
+            border-radius:15px;
+            overflow:hidden;
+            background:#e2ebf0;
+
+            .txtbox {
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform:translate(-50%, -50%);
+                z-index:2;
+                
+                .tit {
+                    font-size:2.5rem;
+                    font-weight:800;
+                    line-height:3rem;
+        
+                    span {
+                        display:inline-block;
+                    }
+                }
+        
+                .txt{
+                    display:block;
+                    font-size:2rem;
+                    text-align:center;
+                }
+            }
+            img {
+                object-fit:cover;
             }
         }
     }
