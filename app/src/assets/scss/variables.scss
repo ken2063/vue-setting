@@ -1,7 +1,14 @@
 // variables.scss
+
+// color
 $color_suny_red: #D60036;
 $color_suny_blue: #4B68C5;
 $color_warm_red: #EA7F9A;
 $color_dark_gray: #494949;
 $color_warm_gray: #75746f;
 $color_smoke_gray: #DDDDDB;
+
+// Breakpoints
+$breakpoint-mobile: 335px;
+$breakpoint-tablet: 758px;
+$breakpoint-desktop: 1280px;
