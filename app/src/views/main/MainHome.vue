@@ -9,6 +9,8 @@ import MainTab02 from "@/components/main/MainTab02.vue";
 import MainTab03 from "@/components/main/MainTab03.vue";
 import MainTab04 from "@/components/main/MainTab04.vue";
 
+import MainSwipeBanner from "@/components/main/MainSwipeBanner.vue";
+
 export default {
   name: "NormalLayout",
   components: {
@@ -21,6 +23,8 @@ export default {
     MainTab02,
     MainTab03,
     MainTab04,
+
+    MainSwipeBanner,
   },
 
   data() {
@@ -118,6 +122,8 @@ export default {
         <!-- // LayoutRight -->
       </section>
       <!-- // m_section -->
+
+      <MainSwipeBanner />
     </template>
   </PageLayout>
 </template>

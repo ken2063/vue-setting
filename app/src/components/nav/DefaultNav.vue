@@ -5,34 +5,38 @@ export default {
   props: {
     Nav: Array,
   },
+
+  data() {
+    return {
+      show: false,
+    };
+  },
 };
 </script>
 
 <template>
-  <ul class="menu">
-    <li class="menu--item" v-for="(item, i) in Nav" :key="i">
-      <a :href="'/' + item">
-        <div class="items"></div>
-        <span class="txt">{{ item }}</span>
-      </a>
-    </li>
+  <div class="menuwrap">
+    <ul class="menu">
+      <li class="menu--item" v-for="(item, i) in Nav" :key="i">
+        <a :href="'/' + item">
+          <div class="items"></div>
+          <span class="txt">{{ item }}</span>
+        </a>
+      </li>
 
-    <li class="menu--item">
-      <button
-        class="btnetc"
-        @click="$event.target.classList.toggle('active')"
-      ></button>
+      <li class="menu--item" @click="$event.target.classList.toggle('active')">
+        <button class="btnetc" @click="show = !show"></button>
+      </li>
+    </ul>
 
-      <div class="etcwrap">
-        <div class="etcbox">
-          <div>
-            <p class="tit">안녕하십쇼</p>
-          </div>
+    <div class="etcwrap" v-if="show">
+      <div class="etcbox">
+        <div>
         </div>
-        <div class="etcback"></div>
       </div>
-    </li>
-  </ul>
+      <!-- <div class="etcback"></div> -->
+    </div>
+  </div>
 </template>
 
 <style>

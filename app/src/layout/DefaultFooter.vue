@@ -12,10 +12,10 @@ export default {
     <div class="foot">
       <!-- footmenu -->
       <div class="footmenu flex">
-        <div class="menuitem">회사소개</div>
-        <div class="menuitem">인재채용</div>
-        <div class="menuitem">이용약관</div>
-        <div class="menuitem">개인정보처리방침</div>
+        <div class="menuitem"><button>회사소개</button></div>
+        <div class="menuitem"><button>인재채용</button></div>
+        <div class="menuitem"><button>이용약관</button></div>
+        <div class="menuitem"><button>개인정보처리방침</button></div>
       </div>
       <!-- // footmenu -->
 

@@ -1,40 +1,46 @@
 footer {
-    padding:30px 0;
-    background-color: #f5f6f7;
-    border-top:1px solid #ebebeb;
-    box-sizing:border-box;
+  padding: 30px 0;
+  background-color: #f5f6f7;
+  border-top: 1px solid #ebebeb;
+  box-sizing: border-box;
 
-    .foot {
-        margin:0 auto;
-        width:100%;
-        max-width:1280px;
+  .foot {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
 
-        .footmenu {
-            justify-content:center;
+    .footmenu {
+      justify-content: center;
 
-            .menuitem {
-                margin-right:20px;
-                font-size:1.4rem;
+      .menuitem {
+        margin-right: 20px;
+        font-size: 1.4rem;
 
-                &:last-child {
-                    margin-right:0;
-                    font-weight:700;
-                }
-            }
+        &:last-child {
+          margin-right: 0;
+          font-weight: 700;
         }
 
-        .footwrap {
-            padding:20px 0;
-
-            .footlogo {
-                margin:0 100px 0 0;
-                font-size:2.4rem;
-                font-weight:700;
-            }
-
-            .foottxt {
-                font-size:1.4rem;
-            }
+        button {
+          &:hover {
+            text-decoration: underline;
+          }
         }
+      }
     }
+
+    .footwrap {
+      padding: 20px 0;
+
+      .footlogo {
+        margin: 0 100px 0 0;
+        font-size: 2.4rem;
+        font-weight: 700;
+      }
+
+      .foottxt {
+        font-size: 1.4rem;
+      }
+    }
+  }
 }
