@@ -25,14 +25,14 @@ export default {
       </li>
 
       <li class="menu--item" @click="$event.target.classList.toggle('active')">
-        <button class="btnetc" @click="show = !show"></button>
+        <button class="btnetc" @click="show = !show">
+        </button>
       </li>
     </ul>
 
     <div class="etcwrap" v-if="show">
       <div class="etcbox">
-        <div>
-        </div>
+        <div></div>
       </div>
       <!-- <div class="etcback"></div> -->
     </div>

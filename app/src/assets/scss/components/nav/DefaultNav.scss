@@ -45,20 +45,23 @@
         }
       }
 
-      button {
-        position: absolute;
-        top: 0;
-        left: 0;
+      button.btnetc {
         padding: 10px;
         width: 54px;
         height: 54px;
         border-radius: 20px;
         border: 1px solid #ebebeb;
         box-sizing: border-box;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background: url("@/assets/images/common/more.png") no-repeat center center;
+        background-size:auto 25px;
 
         &:hover {
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
-          background: #fafbfd;
+          background: url("@/assets/images/common/more.png") no-repeat center center #fafbfd;
+          background-size:auto 25px;
         }
 
         &.active {

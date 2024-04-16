@@ -37,6 +37,11 @@ const routes = [
         name: '/MainHome',
         component:()=>import('@/views/main/MainHome.vue')
     },
+    {
+        path: '/LoginHome',
+        name: '/LoginHome',
+        component:()=>import('@/views/login/LoginHome.vue')
+    },
 
     // not found
     // {

@@ -12,7 +12,7 @@ import MainTab04 from "@/components/main/MainTab04.vue";
 import MainSwipeBanner from "@/components/main/MainSwipeBanner.vue";
 
 export default {
-  name: "NormalLayout",
+  name: "MainHome",
   components: {
     PageLayout,
     MainBanner,
@@ -105,7 +105,7 @@ export default {
             <p class="tit">
               간편하게 로그인하고<span>편리한 기능을 사용해보세요.</span>
             </p>
-            <button class="btnlogin">로그인 시작하기</button>
+            <button class="btnlogin"><router-link to="/LoginHome">로그인 시작하기</router-link></button>
 
             <div class="findbox flex">
               <button class="idtxt">아이디</button>
