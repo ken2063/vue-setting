@@ -1,10 +1,9 @@
 <script>
 export default {
   name: "DefaultNav",
-  components: {
-  },
-  props : {
-    Nav : Array
+  components: {},
+  props: {
+    Nav: Array,
   },
 };
 </script>
@@ -16,6 +15,22 @@ export default {
         <div class="items"></div>
         <span class="txt">{{ item }}</span>
       </a>
+    </li>
+
+    <li class="menu--item">
+      <button
+        class="btnetc"
+        @click="$event.target.classList.toggle('active')"
+      ></button>
+
+      <div class="etcwrap">
+        <div class="etcbox">
+          <div>
+            <p class="tit">안녕하십쇼</p>
+          </div>
+        </div>
+        <div class="etcback"></div>
+      </div>
     </li>
   </ul>
 </template>

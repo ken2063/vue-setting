@@ -1,6 +1,7 @@
 <script>
 import PageLayout from "@/layout/PageLayout.vue";
 import MainBanner from "@/components/main/MainBanner.vue";
+import MainRightBanner from "@/components/main/MainRightBanner.vue";
 import DefaultNav from "@/components/nav/DefaultNav.vue";
 
 import MainTab01 from "@/components/main/MainTab01.vue";
@@ -13,6 +14,7 @@ export default {
   components: {
     PageLayout,
     MainBanner,
+    MainRightBanner,
     DefaultNav,
 
     MainTab01,
@@ -23,7 +25,7 @@ export default {
 
   data() {
     return {
-      Nav: ["상의", "아우터", "바지", "신발", "가방", "ACC"],
+      Nav: ["TOP", "OUTER", "PANTS", "SHOES", "BAG", "ACC"],
 
       currentTab: 0,
       tabList: [
@@ -52,6 +54,7 @@ export default {
       <section class="m_section">
         <!-- LayoutLeft -->
         <div class="LayoutLeft">
+          <!-- LLsction01 -->
           <div class="LLsction01">
             <div class="tabbutton flex">
               <button
@@ -87,8 +90,7 @@ export default {
               </ul>
             </div>
           </div>
-
-          <div></div>
+          <!-- // LLsction01 -->
         </div>
         <!-- // LayoutLeft -->
 
@@ -109,14 +111,9 @@ export default {
           </div>
           <!-- // login -->
 
-          <div class="LRbanner">
-            <a href="#">
-              <div class="txtbox">
-                <p class="tit">banner text<span></span></p>
-                <span class="txt">banner date</span>
-              </div>
-            </a>
-          </div>
+          <!-- LRbanner -->
+          <MainRightBanner />
+          <!-- // LRbanner -->
         </div>
         <!-- // LayoutRight -->
       </section>
