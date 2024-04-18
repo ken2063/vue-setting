@@ -1,11 +1,13 @@
 // MainBanner
 .MainBanner {
+  position:relative;
   width: 100%;
   max-width: 1000px;
   height: 150px;
   margin: 40px auto 0;
   border-radius: 15px;
   overflow: hidden;
+  z-index:1;
 
   a {
     position: relative;

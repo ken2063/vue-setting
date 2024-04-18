@@ -32,7 +32,21 @@ export default {
 
     <div class="etcwrap" v-if="show">
       <div class="etcbox">
-        <div></div>
+        <div class="etcboxwrap">
+          <div class="allmenubox">
+            <p class="tit">전체 서비스</p>
+            <ul class="allmenulist">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+            </ul>
+          </div>
+        </div>
       </div>
       <!-- <div class="etcback"></div> -->
     </div>
